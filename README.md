@@ -8,7 +8,7 @@ Deploy your own Create React App project with Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/create-react-app&template=create-react-app)
 
-_Live Example: https://create-react-template.vercel.app/_
+_Live Example: https://trade.rendexfi.app
 
 ## Available Scripts
 
