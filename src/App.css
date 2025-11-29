@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: 
+    radial-gradient(circle at 20% 25%, rgba(170, 80, 255, 0.45), transparent 60%),
+    radial-gradient(circle at 80% 75%, rgba(0, 200, 255, 0.45), transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.7), #02030a 80%);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -11,15 +24,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.background {
-  background-image: url('./background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
 }
 
 .App-header {
