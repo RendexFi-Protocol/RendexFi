@@ -1,14 +1,19 @@
+html {
+  height: 100%;
+  background-color: #000;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  min-height: 100%;
   background: 
     radial-gradient(circle at 20% 25%, rgba(170, 80, 255, 0.45), transparent 60%),
     radial-gradient(circle at 80% 75%, rgba(0, 200, 255, 0.45), transparent 60%),
     radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.7), #02030a 80%);
   background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
-  overflow-x: hidden;
+  background-attachment: scroll;
+  background-color: #000;
 }
 
 html, #root, .App {
