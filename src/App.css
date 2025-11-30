@@ -54,7 +54,7 @@ html, #root, .App {
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    width: calc(100% - 1rem);
+    width: calc(100% - 4rem);
     top: 0.5rem;
   }
 }
