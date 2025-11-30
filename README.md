@@ -1,31 +1,53 @@
-# DexTrade
+# RendeXFi - DeFi Trading Platform on Solana
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+## Über RendeXFi
+RendeXFi ist eine innovative DeFi (Decentralized Finance) Handelsplattform auf der Solana Blockchain, die fortschrittliche Trading-Funktionen mit benutzerfreundlichem Design verbindet.
 
-## Deploy Your Own
+## 🚀 Features
 
-Deploy your own Create React App project with Vercel.
+### Kernfunktionen
+- **Blitzschnelle Transaktionen** - Nutzt Solanas Hochgeschwindigkeits-Blockchain
+- **Geringe Gebühren** - Kosteneffizientes Trading durch Solanas Architektur
+- **Dezentrales Trading** - Handeln ohne Zwischenhändler
+- **Erweiterte Charting-Tools** - Professionelle Trading-Analyse
+- **Sicherheit First** - Fokus auf Sicherheit und Privatsphäre
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/create-react-app&template=create-react-app)
+### Handelsfunktionen
+- Spot Trading
+- Limit Orders
+- Market Orders
+- Echtzeit-Marktdaten
+- Portfolio-Tracking
 
-_Live Example: https://trade.rendexfi.app
+## 🛠 Technologie
 
-## Available Scripts
+### Tech Stack
+- **Frontend**: React.js / Next.js
+- **Blockchain**: Solana
+- **Smart Contracts**: Rust / Anchor Framework
+- **Wallet Integration**: Phantom, Solflare, Backpack
+- **DeFi Protokolle**: Serum, Raydium, Orca Integration
 
-In the project directory, you can run:
+## 📦 Installation
 
-### `npm start`
+### Voraussetzungen
+- Node.js 16+
+- npm oder yarn
+- Phantom Wallet oder vergleichbare Solana Wallet
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Lokale Entwicklung
+```bash
+# Repository klonen
+git clone https://github.com/RendexFi-Protocol/RendexFi.git
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+# In Verzeichnis wechseln
+cd rendexfi
 
-### `npm test`
+# Abhängigkeiten installieren
+npm install
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Solana Tools installieren (falls benötigt)
+curl --proto '=https' --tlsv1.2 -sSf https://docs.solana.com/install/solana-install-init | sh
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+# Entwicklungsserver starten
+npm run dev
