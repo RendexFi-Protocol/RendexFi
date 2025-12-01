@@ -6,12 +6,13 @@
 .connect-button-jup {
   background: linear-gradient(90deg, #8c66fc, #5b34fa);
   border: none;
-  border-radius: 12px;
-  padding: 14px 24px;
+  border-radius: 8px;
+  padding: 10px 16px;
   color: white;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 10px;
   cursor: pointer;
+  height: 30px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(91, 52, 250, 0.3);
   position: relative;
@@ -36,12 +37,13 @@
 .wallet-connected-jup {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 8px 12px 8px 16px;
+  border-radius: 8px;
+  padding: 6px 10px 6px 12px;
   backdrop-filter: blur(10px);
+  height: 30px;
 }
 
 .wallet-info {
@@ -52,13 +54,13 @@
 }
 
 .wallet-balance {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
   color: #00ff88;
 }
 
 .wallet-address-jup {
-  font-size: 12px;
+  font-size: 10px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
 }
@@ -66,14 +68,16 @@
 .disconnect-button-jup {
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  border-radius: 8px;
-  padding: 6px;
+  border-radius: 6px;
+  padding: 4px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 24px;
+  widght: 24px;
 }
 
 .disconnect-button-jup:hover {
