@@ -1,75 +1,193 @@
-.wallet-connect {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+/* JUP.ag Style Connect Button */
+.wallet-container-jup {
+  position: relative;
 }
 
-.wallet-button {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  padding: 10px 16px;
+.connect-button-jup {
+  background: linear-gradient(90deg, #8c66fc, #5b34fa);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
   color: white;
-  font-weight: 500;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(91, 52, 250, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
-.wallet-button:hover {
-  background: rgba(255, 255, 255, 0.15);
+.connect-button-jup:hover {
   transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(91, 52, 250, 0.4);
 }
 
-.wallet-icon {
-  font-size: 14px;
+.connect-button-jup:active {
+  transform: translateY(0);
 }
 
-/* Connected State */
-.wallet-connected {
+.connect-button-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* Connected State - JUP Style */
+.wallet-connected-jup {
   display: flex;
   align-items: center;
   gap: 12px;
   background: rgba(255, 255, 255, 0.05);
-  padding: 8px 16px;
-  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 8px 12px 8px 16px;
+  backdrop-filter: blur(10px);
 }
 
-.wallet-address {
-  font-size: 13px;
-  font-weight: 500;
-  color: #00ff88;
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
 }
 
-.disconnect-button {
-  background: rgba(255, 59, 92, 0.2);
-  border: 1px solid rgba(255, 59, 92, 0.3);
-  border-radius: 8px;
-  padding: 6px 12px;
-  color: #ff3b5c;
+.wallet-balance {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.wallet-address-jup {
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.disconnect-button-jup {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 6px;
+  color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.disconnect-button:hover {
-  background: rgba(255, 59, 92, 0.3);
+.disconnect-button-jup:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .wallet-connect {
-    gap: 8px;
-  }
-  
-  .wallet-button {
-    padding: 8px 12px;
-    font-size: 12px;
-  }
+/* Wallet Menu - JUP Style */
+.wallet-menu-jup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: #1a1b2f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 16px;
+  min-width: 280px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+}
+
+.wallet-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.close-button:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.wallet-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wallet-option-jup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wallet-option-jup:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px);
+}
+
+.wallet-option-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wallet-option-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-option-icon img {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.wallet-option-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.wallet-option-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.wallet-option-status {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.wallet-option-arrow {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
 }
