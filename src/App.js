@@ -1,5 +1,5 @@
 import './App.css';
-import WalletConnect from './components/WalletConnect';
+import WalletConnect from './path0/components/WalletConnect';
 
 function App() {
   return (
