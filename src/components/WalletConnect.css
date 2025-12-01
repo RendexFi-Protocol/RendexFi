@@ -41,7 +41,7 @@
   gap: 6px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 6px 10px 6px 10px;
   backdrop-filter: blur(10px);
   height: 30px;
@@ -55,13 +55,13 @@
 }
 
 .wallet-balance {
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 600;
   color: #00ff88;
 }
 
 .wallet-address {
-  font-size: 10px;
+  font-size: 8px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
 }
@@ -69,7 +69,7 @@
 .disconnect-button {
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 4px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
@@ -77,8 +77,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 24px;
-  widght: 24px;
+  height: 16px;
+  widght: 16px;
 }
 
 .disconnect-button:hover {
@@ -184,11 +184,11 @@
 
 .wallet-option-name {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .wallet-option-status {
-  font-size: 12px;
+  font-size: 10px;
   color: rgba(255, 255, 255, 0.6);
 }
 
