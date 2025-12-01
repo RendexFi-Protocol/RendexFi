@@ -4,9 +4,9 @@
 }
 
 .settings-button {
-  background: #f8f9fa;
+  background: rgba(255, 255, 255, 0.05);
   border: 2px solid #e9ecef;
-  border-radius: 12px;
+  border-radius: 6px;
   cursor: pointer;
   padding: 8px;
   border-radius: 12px;
