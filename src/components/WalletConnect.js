@@ -13,14 +13,9 @@ const WalletConnect = () => {
   const [balance, setBalance] = useState(0);
   const [connection] = useState(new Connection('https://api.mainnet-beta.solana.com'));
 
-  // Balance abrufen wenn verbunden ist
+  // Wallet Balance abruf wenn connectet ist
   useEffect(() => {
-    if (isConnected && walletAddress) {
-      getBalance();
-    }
-  }, [isConnected, walletAddress]);
-
-  const getBalance = async () => {
+  const fetchBalance = async () => {
     try {
       const publicKey = new PublicKey(walletAddress);
       const balanceInLamports = await connection.getBalance(publicKey);
@@ -30,6 +25,12 @@ const WalletConnect = () => {
       console.error('Error fetching balance:', error);
     }
   };
+
+  if (isConnected && walletAddress) {
+    fetchBalance();
+  }
+}, [isConnected, walletAddress, connection]);
+
 
   const connectPhantom = async () => {
     try {
