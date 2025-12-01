@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Connection, LAMPORTS_PER_SOL, PublicKey } from '@solana/web3.js';
 import './WalletConnect.css';
 
+import phantom_icon from './phantom_icon.png';
+import solflare_icon from './solflare_icon.png';
+
+
 const WalletConnect = () => {
   const [isConnected, setIsConnected] = useState(false);
   const [walletAddress, setWalletAddress] = useState('');
