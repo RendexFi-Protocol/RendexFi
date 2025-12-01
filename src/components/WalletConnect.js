@@ -34,31 +34,34 @@ const WalletConnect = () => {
   }
 }, [isConnected, walletAddress, connection]);
 
-
   const connectPhantom = async () => {
-    try {
-      if (window?.solana?.isPhantom) {
-        const response = await window.solana.connect();
-        const address = response.publicKey.toString();
-        setWalletAddress(address);
-        setIsConnected(true);
-        setShowMenu(false);
-        
-        // Balance sofort abrufen
-        const publicKey = new PublicKey(address);
-        const balanceInLamports = await connection.getBalance(publicKey);
-        const balanceInSOL = balanceInLamports / LAMPORTS_PER_SOL;
-        setBalance(balanceInSOL);
-        
-      } else {
-        alert('Phantom Wallet nicht gefunden!');
-        window.open('https://phantom.app/', '_blank');
-      }
-    } catch (error) {
-      console.error('Phantom connection error:', error);
-    }
-  };
+  try {
+    const provider = window?.phantom?.solana || window?.solana;
 
+    if (!provider?.isPhantom) {
+      alert("Phantom Wallet nicht gefunden!");
+      window.open("https://phantom.app/", "_blank");
+      return;
+    }
+
+    const resp = await provider.connect();
+    const address = resp.publicKey.toString();
+
+    console.log("Connected:", address);
+
+    setWalletAddress(address);
+    setIsConnected(true);
+    setShowMenu(false);
+
+    const publicKey = new PublicKey(address);
+    const balanceLamports = await connection.getBalance(publicKey);
+    setBalance(balanceLamports / LAMPORTS_PER_SOL);
+
+  } catch (err) {
+    console.error("Phantom error:", err);
+  }
+};
+  
   const connectSolflare = async () => {
     try {
       if (window?.solflare?.isSolflare) {
