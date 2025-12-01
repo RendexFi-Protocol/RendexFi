@@ -22,8 +22,8 @@ RendeXFi ist eine innovative DeFi (Decentralized Finance) Handelsplattform auf d
 ## 🛠 Technologie
 
 ### Tech Stack
-- **Frontend**: React.js / Next.js
+- **Frontend**: React.js
 - **Blockchain**: Solana
 - **Smart Contracts**: Rust / Anchor Framework
-- **Wallet Integration**: Phantom, Solflare, Backpack
-- **DeFi Protokolle**: Serum, Raydium, Orca Integration
+- **Wallet Integration**: Phantom, Solflare
+- **DeFi Protokolle**: RendexFi
