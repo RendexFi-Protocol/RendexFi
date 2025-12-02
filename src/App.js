@@ -2,7 +2,7 @@ import './App.css';
 
 import WalletConnect from './components/WalletConnect';
 import SettingsButton from './components/SettingsButton';
-import SerachBar from './components/SerachBar';
+import SearchBar from './components/SearchBar';
 
 function App() {
   
@@ -12,7 +12,7 @@ function App() {
             <div className="nav-wrapper">
                 <div className="nav-left">
                   
-                    <Serachbar />
+                    <SearchBar />
                 </div>
                 <div className="nav-right">
                     
