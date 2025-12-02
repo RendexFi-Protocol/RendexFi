@@ -11,13 +11,12 @@ const WalletConnect = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [balance, setBalance] = useState(0);
 
-  // *** WICHTIG: Stabiler RPC → richtige Balance ***
   const connection = new Connection(
-  "https://solana-mainnet.rpcfast.com",
-  "confirmed"
-);
+    "https://api.mainnet-beta.solana.com",
+    "confirmed"
+  );
 
-  // BALANCE automatisch laden
+
   useEffect(() => {
     const fetchBalance = async () => {
       try {
@@ -33,7 +32,6 @@ const WalletConnect = () => {
     if (isConnected) fetchBalance();
   }, [isConnected, walletAddress, connection]);
 
-  // PHANTOM CONNECT
   const connectPhantom = async () => {
     try {
       const provider = window?.phantom?.solana;
@@ -55,7 +53,6 @@ const WalletConnect = () => {
     }
   };
 
-  // SOLFLARE CONNECT
   const connectSolflare = async () => {
     try {
       if (!window?.solflare?.isSolflare) {
@@ -81,7 +78,6 @@ const WalletConnect = () => {
     }
   };
 
-  // DISCONNECT
   const disconnectWallet = async () => {
     try {
       if (window?.solana?.isPhantom) await window.solana.disconnect();
