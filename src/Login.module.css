@@ -1,0 +1,78 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #0b0f17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  background: rgba(15, 20, 30, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.08);
+  text-align: center;
+  width: 320px;
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.title {
+  color: #00eaff;
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  color: white;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.2s border;
+}
+
+.input:focus {
+  border: 1px solid #00eaff;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00eaff, #008bff);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s transform, 0.25s box-shadow;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 150, 255, 0.25);
+}
+
+.error {
+  margin-top: 15px;
+  color: #ff4d4d;
+  font-size: 14px;
+}
