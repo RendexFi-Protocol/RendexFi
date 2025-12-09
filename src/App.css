@@ -51,8 +51,8 @@ html, #root, .App {
   min-height: 20px; /* Damit sie sichtbar bleibt */
 }
 .logo {
-  width: 15px;
-  height: 15px;
+  width: 28px;
+  height: 28px;
 }
 
 .nav-left {
