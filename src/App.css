@@ -56,7 +56,8 @@ html, #root, .App {
 }
 
 .nav-left {
-  /* Leer, aber nimmt Platz ein */
+  gap: 10px;
+  align-items: center;
   flex: 1;
 }
 
