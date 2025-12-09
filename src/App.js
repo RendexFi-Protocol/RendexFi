@@ -6,7 +6,7 @@ import './App.css';
 import WalletConnect from './components/WalletConnect';
 import SettingsButton from './components/SettingsButton';
 import SearchBar from './components/SearchBar';
-import logo from './assets/logo512.png';
+import logo from './assets/logo192.png';
 
 function App() {
   const [auth, setAuth] = useState(null);
