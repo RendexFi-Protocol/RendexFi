@@ -1,3 +1,5 @@
+import "./WalletCard.css";
+
 export default function WalletCard() {
   return (
     <div className="wallet--card">
