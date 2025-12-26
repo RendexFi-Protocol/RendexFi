@@ -1,0 +1,17 @@
+.top-buttons {
+  position: fixed;
+  top: env(safe-area-inset-top);
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+
+  z-index: 20;
+}
+
+/* Optional: kleine Feinjustierung */
+.top-button {
+  pointer-events: auto;
+}
