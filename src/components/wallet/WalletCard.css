@@ -1,61 +1,43 @@
 .wallet--card {
   position: relative;
 
-  width: 100%;
+  width: calc(100% - 32px);
   max-width: 420px;
-  height: 190px;
+  height: 180px;
 
   margin: 96px auto 0;
 
-  background: #9fb6b8; /* heller Grundton */
+  /* Base Card */
+  background: #9fb6b8;
   border-radius: 28px;
-
   overflow: hidden;
 
   box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.35);
+    0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
 /* ===============================
-   DIAGONALER OVERLAY (DUNKEL)
+   DIAGONALER OVERLAY (FLACH, NICHT PFEIL)
    =============================== */
 .wallet--card::before {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
 
   background: linear-gradient(
     135deg,
-    #2f6f74,
-    #3c5a5e
+    #2f6f74 0%,
+    #3c5a5e 60%,
+    #3c5a5e 100%
   );
 
+  /* lange, ruhige Schräge */
   clip-path: polygon(
     0 0,
-    62% 0,
-    100% 55%,
-    78% 100%,
-    0 100%
-  );
-}
-
-/* ===============================
-   UNTERER NOTCH / AUSSCHNITT
-   =============================== */
-.wallet--card::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-
-  width: 55%;
-  height: 40%;
-
-  background: #ffffff; /* Hintergrundfarbe der Page */
-  clip-path: polygon(
-    0 0,
-    80% 0,
-    60% 100%,
+    65% 0,
+    100% 60%,
+    90% 100%,
     0 100%
   );
 }
@@ -67,13 +49,12 @@
   position: relative;
   z-index: 2;
 
-  padding: 26px;
+  padding: 28px;
   color: #ffffff;
 }
 
 .wallet-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -96,8 +77,9 @@
   position: absolute;
   left: 20px;
   bottom: 18px;
+  z-index: 3;
 
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.55);
   color: #fff;
 
   padding: 6px 10px;
