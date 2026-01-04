@@ -27,8 +27,8 @@ export default function Login() {
       <div className={styles.card}>
         <img src={logo} alt="RendexFi" className={styles.logo} />
 
-        <h2 className={styles.title}>RendexFi Beta Access</h2>
-        <p className={styles.subtitle}>Bitte Passwort eingeben</p>
+        <h2 className={styles.title}>RendexFi Access</h2>
+        <p className={styles.subtitle}>Passwort eingeben</p>
 
         <input
           type="password"
