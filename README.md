@@ -1,4 +1,4 @@
-# ⚡️ [RendexFi](https://trade.rendexfi.app) - DeFi Trading Platform on Solana
+# ⚡️ [RendexFi](https://trade.rendexfi.app) - Desktop DeFi Trading Platform on Solana
 
 ## 📍 Über RendexFi
 RendexFi ist eine innovative DeFi (Decentralized Finance) Handelsplattform + Portfolio auf der Solana Blockchain, die fortschrittliche Trading-Funktionen mit benutzerfreundlichem Design verbindet.
