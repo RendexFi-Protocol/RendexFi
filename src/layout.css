@@ -33,7 +33,7 @@ html, #root, .App {
     env(safe-area-inset-left);
 }
 
-.wallet-button{
+.wallet-connect {
   display:flex;
   flex-direction:column;
 
