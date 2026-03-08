@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Login from "./Login";
 import "./layout.css";
+import logo from "./assets/logo512.png";
 
 // COMPONENTS IMPORTS //
 
@@ -22,6 +23,9 @@ function App() {
 
   return (
     <BrowserRouter>
+      <div className="app-logo">
+        <img src={logo} alt="RendexFi" />
+        </div>
       <Routes>
         {/* LOGIN */}
         <Route
