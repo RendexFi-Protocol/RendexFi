@@ -61,8 +61,8 @@ html, #root, .App {
 
   color:white;
   font-weight:600;
-
-  background:rgba(255,255,255,0.08);
+  
+  background: #060708;
 
   backdrop-filter:blur(14px);
 
