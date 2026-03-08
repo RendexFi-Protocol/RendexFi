@@ -32,38 +32,30 @@ html, #root, .App {
     env(safe-area-inset-bottom)
     env(safe-area-inset-left);
 }
-.wallet-connect{
-  position:absolute;
-  top:20px;
-  right:20px;
-}
 
-.wallet-connect button{
+.wallet-button{
   display:flex;
-  gap:10px;
-  align-items:center;
+  flex-direction:column;
 
-  padding:10px 16px;
+  padding:12px 16px;
 
   border-radius:14px;
 
+  background:rgba(255,255,255,0.06);
+
+  backdrop-filter:blur(14px);
+
+  border:1px solid rgba(255,255,255,0.08);
+
   color:white;
+}
+
+.wallet-address{
   font-weight:600;
-
-  background:rgba(255,255,255,0.08);
-
-  backdrop-filter:blur(12px);
-
-  border:1px solid rgba(255,255,255,0.1);
-
-  cursor:pointer;
+  font-size:14px;
 }
 
-.wallet-connect button:hover{
-  background:rgba(255,255,255,0.12);
-}
-
-.balance{
+.wallet-balance{
   font-size:12px;
-  opacity:0.8;
+  opacity:0.7;
 }
