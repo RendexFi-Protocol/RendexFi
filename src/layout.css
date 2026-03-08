@@ -32,13 +32,13 @@ html, #root, .App {
     env(safe-area-inset-bottom)
     env(safe-area-inset-left);
 }
-.wallet-button{
+.wallet-connect-button{
   position:absolute;
   top:20px;
   right:20px;
 }
 
-.wallet-button button{
+.wallet-connect-button button{
   background:#9945FF;
   color:white;
   border:none;
