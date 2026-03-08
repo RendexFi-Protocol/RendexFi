@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Login from "./Login";
 import "./layout.css";
-import logo from "./assets/logo512.png";
+import logo from "./assets/logo512.PNG";
 
 // COMPONENTS IMPORTS //
 
