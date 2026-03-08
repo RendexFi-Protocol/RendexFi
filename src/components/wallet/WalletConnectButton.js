@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function WalletButton() {
+export default function WalletConnectButton() {
   const [walletAddress, setWalletAddress] = useState(null);
 
   const connectPhantom = async () => {
