@@ -40,7 +40,7 @@ html, #root, .App {
   z-index:100;
 }
 
-.wallet-button{
+.wallet-connect button{
   display:flex;
   align-items:center;
   gap:10px;
