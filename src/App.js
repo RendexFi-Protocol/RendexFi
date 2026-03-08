@@ -25,7 +25,7 @@ function App() {
     <BrowserRouter>
       <div className="app-logo">
         <img src={logo} alt="RendexFi" />
-        </div>
+      </div>
       <Routes>
         {/* LOGIN */}
         <Route
