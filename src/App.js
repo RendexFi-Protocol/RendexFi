@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import Login from "./Login";
 import "./layout.css";
 
+// COMPONENTS IMPORTS //
+
+import WalletButton from "./components/WalletButton";
+
 function App() {
   const [auth, setAuth] = useState(false);
   const [checked, setChecked] = useState(false);
@@ -28,7 +32,15 @@ function App() {
         {/* ROOT */}
         <Route
           path="/"
-          element={auth ? null : <Navigate to="/login" replace />}
+          element={
+            auth ? (
+              <>
+               <WalletConnectButton/>
+              </>
+            ) : ( 
+              <Navigate to="/login" replace />
+            )
+          }
         />
       </Routes>
     </BrowserRouter>
