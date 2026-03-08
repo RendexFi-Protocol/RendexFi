@@ -5,7 +5,7 @@ import "./layout.css";
 
 // COMPONENTS IMPORTS //
 
-import WalletButton from "./components/wallet/WalletConnectButton";
+import WalletConnectButton from "./components/wallet/WalletConnectButton";
 
 function App() {
   const [auth, setAuth] = useState(false);
