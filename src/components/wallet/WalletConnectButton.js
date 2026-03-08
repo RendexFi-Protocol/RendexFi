@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js";
 
 export default function WalletConnectButton() {
   const [walletAddress, setWalletAddress] = useState(null);
+  const [balance, setBalance] = useState(null);
+
+  const connection = new Connection(clusterApiUrl("mainnet-beta"));
 
   const connectPhantom = async () => {
     try {
@@ -14,14 +18,22 @@ export default function WalletConnectButton() {
       }
 
       const resp = await provider.connect();
-      setWalletAddress(resp.publicKey.toString());
+      const address = resp.publicKey.toString();
+
+      setWalletAddress(address);
+
+      const publicKey = new PublicKey(address);
+      const lamports = await connection.getBalance(publicKey);
+
+      setBalance(lamports / 1000000000);
+
     } catch (err) {
       console.error(err);
     }
   };
 
   return (
-    <div style={{ position: "absolute", top: 20, right: 20 }}>
+    <div className="wallet-connect">
       {!walletAddress ? (
         <button onClick={connectPhantom}>
           Connect Wallet
@@ -29,8 +41,11 @@ export default function WalletConnectButton() {
       ) : (
         <button>
           {walletAddress.slice(0,4)}...{walletAddress.slice(-4)}
+          <span className="balance">
+            {balance ? balance.toFixed(2) + " SOL" : "..."}
+          </span>
         </button>
       )}
     </div>
   );
-  }
+}
