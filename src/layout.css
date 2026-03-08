@@ -32,3 +32,18 @@ html, #root, .App {
     env(safe-area-inset-bottom)
     env(safe-area-inset-left);
 }
+.wallet-button{
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+
+.wallet-button button{
+  background:#9945FF;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
+}
